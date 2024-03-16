@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+        <!-- Os sources devem estar na ordem de menor para o maior -->
+    </picture>
+    <br>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-300.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-700.jpg" type="image/jpg">
+        <source media="(max-width: 1250px)" srcset="imagens/foto-1000.jpg" type="image/jpg">
+        <source media="(max-width: 1550px)" srcset="imagens/foto-1200.jpg" type="image/jpg">
+        <img src="imagens/foto-1500.jpg" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudio em HTML5</p>
+    <!-- Maneira mais obsoleta -->
+    <audio src="midia/violet-city.mp3" controls autoplay loop></audio>
+    <!-- Compatível com os formatos MP3, WAV, OGG -->
+    <audio preload="metadata" controls> <!-- metadata só baixa quando inicia o áudio, auto quando abre o site -->
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav"> <!-- Evitar arquivos wav, muito pesados -->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio, clique aqui para <a href="midia/guanacast-33.mp3">baixar o arquivo mp3</a>.</p>
+    </audio>
+</body>
+</html>

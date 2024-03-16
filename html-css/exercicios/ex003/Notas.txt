@@ -1,0 +1,1 @@
+É importante manter sempre um tamanho razoável para as imagens, evitando que o site fique pesado. Abaixo de 1500 px de largura está ótimo, reduz o tamanho e não perde tanta qualidade, vide imagens da Seraphine.
