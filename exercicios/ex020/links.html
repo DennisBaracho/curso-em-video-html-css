@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*  SELETORES PERSONALIZADOS
+            #  = id
+            .  = class
+            :  = pseudo-class
+            :: = pseudo-element
+            >  = children
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            /* Link base */
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            /* Após visitar o link */
+            color: darkred;
+        }
+
+        a:hover {
+            /* Quando passo o mouse em cima do link */
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            /* Quando o link é clicado */
+            color: yellow;
+        }
+
+        .especial{
+            background-color: rgb(243, 172, 172);
+        }
+
+        .especial::after {
+            /* É um pseudo-elemento, portanto :: */
+            /* Após os links, adiciona o conteúdo <- */
+            content: ' <-';
+        }
+
+        .especial::before{
+            content: '-> ';
+        }
+
+      
+    </style>
+</head>
+
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://dennisbaracho.github.io">Repositório GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" class="especial">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com">Site do CursoEmVideo</a></li>
+    </ul>
+
+</body>
+
+</html>
