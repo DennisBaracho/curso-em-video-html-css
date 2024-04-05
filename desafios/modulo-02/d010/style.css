@@ -5,16 +5,175 @@
     font-size: normal;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-family: 'idroid';
-    color: green;
+    margin: 0px;
+    color: rgb(0, 108, 65);
 }
 
-h2{
-    background-image: linear-gradient(to right, rgba(134, 219, 134, 0.393) 20%, white);
-}
 body {
     margin: 0px;
     border: 0px;
     padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(108, 224, 143);
+}
+
+/* --------------------- CABEÇALHO --------------------- */
+header {
+    background-image: linear-gradient(to top, rgb(0, 108, 65) 20%, rgb(89, 239, 137));
+    color: white;
+    text-align: center;
+    box-shadow: 0px 2px 8px 1px black;
+}
+
+#titulo-cabecalho {
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 200;
+    padding-top: 30px;
+    text-shadow: 1px 2px 4px black;
+}
+
+menu {
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+header>p {
+    font-weight: 200;
+    text-shadow: 1px 2px 4px black;
+    font-size: 0.8em;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 0.8em;
+    margin-left: 15px;
+}
+
+menu {
+    padding-bottom: 5px;
+}
+
+/* ----------------------- MAIN ----------------------- */
+
+main {
+    height: 100%;
+    width: 75%;
+    background-color: white;
+    margin: auto;
+    text-align: justify;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 8px 1px black;
+    border-radius: 0px 0px 10px 10px;
+}
+
+section {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#titulo-principal {
+    font-size: 2em;
+}
+
+.titulo-artigo {
+    background-image: linear-gradient(to right, rgba(134, 219, 134, 0.393) 20%, white);
+    font-family: 'idroid';
+    margin: 0px;
+    color: rgb(0, 108, 65);
+    text-align: left;
+    text-indent: 10px;
+}
+
+p {
+    text-indent: 2em;
+}
+
+img {
+    width: 100%;
+}
+
+#bugdroid-image{
+    text-align: center;
+}
+
+#bugdroid-width{
+    width: 25%;
+}
+
+#video-android {
+    background-color: rgb(0, 108, 65);
+    text-align: center;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+iframe {
+    width: 100%;
+}
+
+#extra {
+    width: 100%;
+    background-color: rgb(160, 240, 160);
+    margin: auto;
+    text-align: justify;
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.306);
+    border-radius: 10px;
+}
+
+#titulo-extra {
+    background-color: rgb(66, 168, 96);
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#texto-extra {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+
+li:before {
+    content: '✓ ';
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#coluna-1 {
+    float: left;
+    display: inline;
+    width: 50%;
+}
+
+#coluna-2 {
+    display: inline;
+}
+
+/* ----------------------- FOOTER ----------------------- */
+
+footer {
+    background-color: rgb(0, 108, 65);
+    color: white;
+    font-size: 0.6em;
+    font-style: italic;
+    text-align: center;
+    padding: 6px;
 }
