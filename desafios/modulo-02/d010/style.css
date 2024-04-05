@@ -20,6 +20,12 @@ body {
     background-color: rgb(108, 224, 143);
 }
 
+.destaque {
+    font-weight: bold;
+    color: rgb(0, 108, 65);
+    text-decoration: none;
+}
+
 /* --------------------- CABEÇALHO --------------------- */
 header {
     background-image: linear-gradient(to top, rgb(0, 108, 65) 20%, rgb(89, 239, 137));
@@ -51,7 +57,7 @@ header>p {
 
 }
 
-a {
+nav a {
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -109,20 +115,23 @@ img {
 }
 
 #bugdroid-width{
-    width: 25%;
+    width: 50%;
 }
 
 #video-android {
     background-color: rgb(0, 108, 65);
-    text-align: center;
-    padding-left: 45px;
-    padding-right: 45px;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 54%;
+    margin-bottom: 30px;
+    position: relative;
 }
 
 iframe {
-    width: 100%;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
 
 #extra {
@@ -176,4 +185,10 @@ footer {
     font-style: italic;
     text-align: center;
     padding: 6px;
+}
+
+footer a {
+    font-weight: bold;
+    text-decoration: none;
+    color: white
 }
