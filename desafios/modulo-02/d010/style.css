@@ -65,6 +65,10 @@ nav a {
     margin-left: 15px;
 }
 
+nav > a:hover{
+    color:rgb(89, 239, 137);
+}
+
 menu {
     padding-bottom: 5px;
 }
@@ -164,16 +168,7 @@ ul {
     list-style: none;
     margin: 0;
     padding: 0;
-}
-
-#coluna-1 {
-    float: left;
-    display: inline;
-    width: 50%;
-}
-
-#coluna-2 {
-    display: inline;
+    columns: 2;
 }
 
 /* ----------------------- FOOTER ----------------------- */
